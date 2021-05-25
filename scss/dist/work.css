@@ -1,0 +1,129 @@
+body {
+  overflow: auto;
+}
+
+.menu {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.work_item {
+  flex-direction: column;
+}
+
+.work_item_text {
+  padding: 0px 0 0 5px;
+}
+
+.my_works_title p {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 60px;
+  opacity: 0.6;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.work_item_text_title a {
+  font-size: 33px;
+  margin-bottom: 33px;
+}
+
+.work_item_text_year {
+  font-size: 20px;
+  margin-bottom: 35px;
+}
+
+.work_item_text_sub_title {
+  font-size: 18px;
+  line-height: 30px;
+  opacity: 0.65;
+}
+
+.my_works_title span {
+  opacity: 0.4;
+  font-size: 16px;
+  line-height: 25px;
+  display: inline-block;
+  max-width: 800px;
+  margin-bottom: 40px;
+}
+
+.work_item_text_year {
+  background-color: #FF7C7C;
+}
+
+.work_item_text_sub_title {
+  margin-bottom: 70px;
+}
+
+@media (max-width: 1000px) {
+  .my_works_title span {
+    margin-bottom: 30px !important;
+  }
+}
+.work_item:after {
+  bottom: 1%;
+}
+
+.work_item_img {
+  position: relative;
+  padding-bottom: 50%;
+  margin-bottom: 50px;
+}
+.work_item_img:hover .hand {
+  transform: scale(1.04) perspective(0px) translateZ(0) rotate(-1.5deg);
+  cursor: pointer;
+  filter: blur(0px);
+}
+
+.hand {
+  object-fit: contain !important;
+  height: 130% !important;
+  top: -24% !important;
+  object-position: bottom right !important;
+  border-radius: 0 0 20px 0 !important;
+  transition: transform 0.4s;
+  transform-origin: right bottom;
+  right: -7px !important;
+}
+
+@media (max-width: 800px) {
+  .work_item_img {
+    margin-bottom: 0;
+  }
+
+  .work_item_text_title a {
+    font-size: 23px;
+    line-height: 35px;
+    margin-bottom: 20px;
+  }
+
+  .work_item_text_year {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+
+  .work_item_text_sub_title {
+    font-size: 16px;
+    line-height: 23px;
+    opacity: 0.8;
+    margin-bottom: 0;
+  }
+
+  .work_item:after {
+    bottom: -3%;
+  }
+}
+.hand.active_anim {
+  transform: translate(0, 0) scale(1);
+}
+
+.my_works_title.active_anim {
+  opacity: 1;
+}
+
+.my_works_title {
+  opacity: 0;
+  transition: opacity 2s 0.5s;
+}
