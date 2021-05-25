@@ -794,13 +794,12 @@ main {
     bottom: -3%;
   }
   .work_item_text {
-    padding: 0px 0 0 0px;
+    padding: 0px 0 0 5px;
     margin: 30px 0 15px 0;
   }
   .work_item_img {
     max-height: 270px;
     padding-bottom: 55%;
-    margin-bottom: 35px;
   }
   .work_item_img img {
     -o-object-position: left top;
