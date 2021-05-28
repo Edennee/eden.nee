@@ -185,7 +185,7 @@ main {
     opacity: 1;
   }
   .menu .menu_items {
-    margin-top: 200px;
+    margin-top: 50%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
