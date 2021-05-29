@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*  normalize anim rendering for text
 
     transform: perspective(1px);
@@ -185,7 +186,7 @@ main {
     opacity: 1;
   }
   .menu .menu_items {
-    margin-top: 50%;
+    margin-top: 200px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -794,12 +795,13 @@ main {
     bottom: -3%;
   }
   .work_item_text {
-    padding: 0px 0 0 5px;
+    padding: 0px 0 0 0px;
     margin: 30px 0 15px 0;
   }
   .work_item_img {
     max-height: 270px;
     padding-bottom: 55%;
+    margin-bottom: 35px;
   }
   .work_item_img img {
     -o-object-position: left top;
@@ -972,5 +974,18 @@ main {
     bottom: 17px;
     right: 17px;
   }
+}
+
+::-webkit-scrollbar {
+  /* - скроллбар */
+  width: 10px;
+  height: 3px;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  /* - ползунок */
+  border-radius: 5px;
+  background-color: #B8B8B8;
 }
 /*# sourceMappingURL=styles.css.map */
