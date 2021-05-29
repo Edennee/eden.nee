@@ -3,7 +3,7 @@
 
     transform: perspective(1px);
     backface-visibility: hidden;    
-    filter: blur(0);
+    filter: blur(0); 
 */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:regular,500,600,700,800);
 body {
@@ -935,8 +935,10 @@ main {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  -webkit-transition: background-color .3s,  opacity .5s, visibility .5s;
-  transition: background-color .3s,  opacity .5s, visibility .5s;
+  -webkit-transition: background-color .3s, 
+ opacity .5s, visibility .5s;
+  transition: background-color .3s, 
+ opacity .5s, visibility .5s;
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
