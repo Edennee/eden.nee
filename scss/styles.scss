@@ -854,3 +854,14 @@ main {
         }
     }
     
+    //scrollbar
+::-webkit-scrollbar { /* - скроллбар */
+    width: 10px;
+    height: 3px;
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb { /* - ползунок */
+    border-radius: 5px;
+    background-color: #B8B8B8;
+}
